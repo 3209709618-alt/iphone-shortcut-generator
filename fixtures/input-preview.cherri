@@ -1,0 +1,4 @@
+#define name InputPreviewProbe
+#define inputs text
+
+show("测试数据输入：{ShortcutInput}")

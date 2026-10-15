@@ -1,0 +1,13 @@
+{
+  "name": "Cherri",
+  "version": "v2.3.0",
+  "repository": "https://github.com/electrikmilk/cherri",
+  "commit": "d2072c62ea708e7727099fab94fa28b0bcec747b",
+  "sourceArchive": "https://api.github.com/repos/electrikmilk/cherri/zipball/d2072c62ea708e7727099fab94fa28b0bcec747b",
+  "linuxX64": {
+    "url": "https://github.com/electrikmilk/cherri/releases/download/v2.3.0/cherri_linux-x86_64.zip",
+    "archiveSha256": "7ab2c384b7b26e7c72a30a8dfa56f89dae12c4068b7951bc1e3193f3698edbe9"
+  },
+  "compileArguments": ["--skip-sign", "--derive-uuids", "--no-ansi"],
+  "verifiedScope": "Windows and WSL Linux x64 local compilation; cloud execution, signing and iPhone import not verified"
+}

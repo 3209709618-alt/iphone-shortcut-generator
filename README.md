@@ -8,9 +8,9 @@
 
 - 手机入口：[GitHub Pages](https://3209709618-alt.github.io/iphone-shortcut-generator/)
 - 公开源码：[GitHub 仓库](https://github.com/3209709618-alt/iphone-shortcut-generator)
-- 发布状态：[GitHub Actions](https://github.com/3209709618-alt/iphone-shortcut-generator/actions/workflows/pages.yml)
+- 发布状态：[GitHub Pages 发布记录](https://github.com/3209709618-alt/iphone-shortcut-generator/actions)
 
-GitHub Pages 已配置为自动部署，成功发布后可直接在 Safari 打开，不需要电脑保持开机。大陆手机流量可达性仍需实测，部署不会补齐尚未验证的快捷指令签名。详见 [部署与手机使用说明](docs/github-pages.md)。
+GitHub Pages 从 `gh-pages` 分支发布静态文件，成功发布后可直接在 Safari 打开，不需要电脑保持开机。修改 `main` 源码后需重新构建并更新发布分支。大陆手机流量可达性仍需实测，部署不会补齐尚未验证的快捷指令签名。详见 [部署与手机使用说明](docs/github-pages.md)。
 
 本地开发：
 
@@ -90,6 +90,6 @@ go build -trimpath -o /absolute/path/to/iphone-shortcut-generator/.local/tools/c
 - 用户尚未注册腾讯云，未验证免费资格；未创建环境、购买套餐、绑定域名或开启超额计费。
 - HubSign 授权、额度及当前可用性尚未确认，未向第三方发送签名请求。
 - 未配置模型密钥；实际模型调用、截图识别和费用尚未测试。
-- 已创建公开 GitHub 仓库并配置 Pages 自动部署；真实 iPhone、手机流量可达性和实际模型调用仍未验收。
+- 已创建公开 GitHub 仓库并使用 Pages 静态发布；真实 iPhone、手机流量可达性和实际模型调用仍未验收。
 
 详细证据、费用分项和可选路线见报告。不要将 `.local/` 内的 `_unsigned.shortcut` 改名为已签名文件或作为安装链接发布。

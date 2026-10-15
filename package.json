@@ -1,0 +1,31 @@
+{
+  "name": "iphone-shortcut-generator",
+  "version": "0.0.0",
+  "private": true,
+  "type": "module",
+  "description": "IPHONE 快捷指令生成器：静态浏览器应用与独立技术验证",
+  "engines": {
+    "node": ">=22"
+  },
+  "scripts": {
+    "dev": "vite --host 127.0.0.1",
+    "build": "tsc --noEmit && vite build",
+    "preview": "vite preview --host 127.0.0.1",
+    "test": "npm run test:web && npm run test:compiler",
+    "test:web": "node --experimental-strip-types --test web/tests/*.test.ts",
+    "test:ui": "playwright test",
+    "test:compiler": "python -m unittest discover -s tests -p test_*.py",
+    "verify:compiler": "python scripts/verify_compiler.py"
+  },
+  "dependencies": {
+    "react": "19.2.0",
+    "react-dom": "19.2.0"
+  },
+  "devDependencies": {
+    "@playwright/test": "1.64.1",
+    "@types/react": "19.2.2",
+    "@types/react-dom": "19.2.2",
+    "typescript": "5.9.3",
+    "vite": "7.3.7"
+  }
+}

@@ -1,0 +1,5 @@
+#define name ImportQuestionProbe
+#define inputs text
+#question setupValue "请输入测试值（不要填写任何真实密钥）" "TEST-ONLY"
+
+show(setupValue)
