@@ -1,4 +1,0 @@
-#define name GeneratorProbe
-#define inputs text
-
-show("测试数据：快捷指令编译验证成功。")
